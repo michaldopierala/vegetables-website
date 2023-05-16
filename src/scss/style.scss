@@ -2,7 +2,50 @@ body {
     // background-color: hsl(160, 85%, 68%);
 }
 
+.Navbar{
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+height: 70px;
+background-color: white;
+box-shadow: 0px 0px 10px -1px gray;
+z-index: 2;
+
+    nav{
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 80px;
+        transform: translate(0%, -50%);
+        .btn{
+            text-decoration: none;
+            margin: 5px;
+            padding: 5px;
+            font-size: 15px;
+            color: black;
+            letter-spacing: 1.9px;
+            text-transform: uppercase;
+    
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+    }
+}
+
 .Slider {
+    margin-top: 70px;
     position: relative;
     // outline: auto;
 

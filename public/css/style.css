@@ -1,4 +1,43 @@
+.Navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 70px;
+  background-color: white;
+  box-shadow: 0px 0px 10px -1px gray;
+  z-index: 2;
+}
+.Navbar nav {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translate(0%, -50%);
+}
+.Navbar nav .btn {
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 15px;
+  color: black;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+}
+.Navbar nav .btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.Navbar img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+}
+
 .Slider {
+  margin-top: 70px;
   position: relative;
 }
 .Slider img {
