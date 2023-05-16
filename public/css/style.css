@@ -1,0 +1,43 @@
+.Slider {
+  position: relative;
+}
+.Slider img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.Slider #prev {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+}
+.Slider #next {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+}
+
+.Raws .raw {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.Raws .raw .text_box {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.Raws .raw .text_box .title {
+  font-size: 45px;
+  color: orange;
+  margin-bottom: 15px;
+}
+.Raws .raw div {
+  overflow: hidden;
+}
+.Raws .raw img {
+  width: 100%;
+  object-fit: contain;
+}
