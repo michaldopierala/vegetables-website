@@ -1,0 +1,107 @@
+.Navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 90px;
+  background-color: white;
+  box-shadow: 0px 0px 10px -1px gray;
+  z-index: 2;
+}
+.Navbar nav {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translate(0%, -50%);
+}
+.Navbar nav .btn {
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 17px;
+  color: black;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.Navbar nav .btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.Navbar img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+}
+
+.Slider {
+  margin-top: 70px;
+  position: relative;
+}
+.Slider img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.Slider #prev {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+}
+.Slider #next {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+}
+
+.Raws .raw {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.Raws .raw .text_box {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.Raws .raw .text_box .title {
+  font-size: 45px;
+  color: orange;
+  margin-bottom: 15px;
+}
+.Raws .raw div {
+  overflow: hidden;
+}
+.Raws .raw img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  height: 400px;
+  background-color: rgb(210, 174, 106);
+  color: white;
+}
+.Footer .adress {
+  color: black;
+}
+.Footer .adress .contact {
+  text-transform: uppercase;
+  margin: 10px;
+  font-size: 23px;
+}
+.Footer .adress .name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
