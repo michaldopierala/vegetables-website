@@ -5,6 +5,7 @@ import Raw from './component/Raw';
 import Navbar from './component/Navbar';
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Home from './component/Home';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           {/* <Slider /> */}
           {/* <Raw /> */}
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

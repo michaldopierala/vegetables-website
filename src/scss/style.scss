@@ -7,7 +7,7 @@ position: fixed;
 top: 0px;
 left: 0px;
 right: 0px;
-height: 70px;
+height: 90px;
 background-color: white;
 box-shadow: 0px 0px 10px -1px gray;
 z-index: 2;
@@ -22,10 +22,11 @@ z-index: 2;
             text-decoration: none;
             margin: 5px;
             padding: 5px;
-            font-size: 15px;
+            font-size: 17px;
             color: black;
-            letter-spacing: 1.9px;
+            letter-spacing: 1.1px;
             text-transform: uppercase;
+            font-weight: bold;
     
             &:hover {
                 cursor: pointer;
@@ -40,7 +41,7 @@ z-index: 2;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 150px;
+        width: 140px;
     }
 }
 
@@ -102,4 +103,32 @@ z-index: 2;
     }
 
 
+}
+
+.Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 400px;
+    background-color: rgb(210, 174, 106);
+    color: white;
+
+    .adress{
+        color: black;
+
+
+        .contact{
+            text-transform: uppercase;
+            margin: 10px;
+            font-size: 23px;
+        }
+
+        .name{
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+    }
 }
