@@ -1,5 +1,6 @@
-body {
-    // background-color: hsl(160, 85%, 68%);
+body{
+    margin:0;
+    padding: 0;
 }
 
 .Navbar{
@@ -70,6 +71,7 @@ z-index: 2;
 }
 
 .Raws {
+    font-size: 50px;
     .raw {
         display: grid;
         grid-template-columns: 50% 50%;

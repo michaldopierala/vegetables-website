@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .Navbar {
   position: fixed;
   top: 0px;
@@ -57,6 +62,9 @@
   right: 50px;
 }
 
+.Raws {
+  font-size: 50px;
+}
 .Raws .raw {
   display: grid;
   grid-template-columns: 50% 50%;

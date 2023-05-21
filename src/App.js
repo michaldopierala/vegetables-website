@@ -16,7 +16,6 @@ function App() {
         <Route index element={<Home />} />
           {/* <Navbar /> */}
           {/* <Slider /> */}
-          {/* <Raw /> */}
         </Routes>
         <Footer/>
       </BrowserRouter>
