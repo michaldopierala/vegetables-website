@@ -34,9 +34,9 @@ export default function Slider2() {
 
   return (
     <div className="Slider">
-      <button id="prev" onClick={prevSlide}>Prev</button>
+      <button id="prev" onClick={prevSlide}>&#8249;</button>
       <img src={images[currentImageIndex]} alt="slider" />
-      <button id='next' onClick={nextSlide}>Next</button>
+      <button id='next' onClick={nextSlide}>&#8250;</button>
     </div>
   )
 }
