@@ -3,10 +3,6 @@ import React from 'react'
 export default function Raw() {
     return (
         <div className='Raws'>
-
-
-
-
             <div className='raw'>
                 <div className='item'>
                     <img src={"./img/apple.jpg"} alt="image" />

@@ -19,7 +19,8 @@ function openMenu(){
 
             <div className='tab'>
                 <Link className="link" onClick={openMenu} to="/">Home </Link>
-                <Link className="link" onClick={openMenu} to="store">Store</Link>
+                <Link className="link" onClick={openMenu} to="store">Products</Link>
+                <Link className="link" onClick={openMenu} to="store">Logistics</Link>
                 <Link className="link" onClick={openMenu} to="about">About</Link>
             </div>
 
