@@ -4,12 +4,13 @@ export default function Footer() {
   return (
     <div className='Footer'>
       <div className='adress'>
-        <div className='contact'>Kontakt</div>
-        <div className='name'>Vebatable Company Sp z.o.o</div>
-        <div>51-000 Stokrotkowa , Wrocław 173 B</div>
-        <div className='tel'>Tel: +48 222 333 444</div>
-        <div className='tel'>mail : lukasz@vegatable.pl</div>
-        <div className='tel'>NIP: PL 2222222 , REGON: 2323232323 </div>
+        <div className='contact'>contact:</div>
+        <div className='name'> GreenBean</div>
+        <div className='tel'>email: office@green-bean.eu</div>
+        <div className='tel'>tel: +48 885 546 884</div>
+        <div>Jodłowa 16, 55-120 Paniowice, Poland</div>
+        <div className='tel'>TAX ident No.: PL6080068114 </div>
+        <div>NIP: 6080068114</div>
       </div>
     </div>
   )

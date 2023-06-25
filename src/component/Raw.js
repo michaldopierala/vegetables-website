@@ -18,7 +18,7 @@ export default function Raw() {
                     <div className='title'>Vegetables</div>
                     Explore Our Vegetable Assortment
                     you will find an abundant array of farm
-                    fresh, nutrient-rich vegetables at [Your Company Name]. Providing an
+                    fresh, nutrient-rich vegetables at GreenBean. Providing an
                     extensive selection of top quality vegetables that cater to the diverse needs of
                     our valued customers.
                 </div>

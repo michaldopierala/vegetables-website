@@ -25,7 +25,7 @@ export default function Navbar() {
                 
             </nav>
            
-            <img src={'./img/logosmall.png'} alt="logo" />
+            <img src={'./img/logov2.png'} alt="logo" />
         </div>
     )
 }

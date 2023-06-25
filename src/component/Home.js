@@ -28,9 +28,9 @@ export default function Home() {
       <div ref={(ref) => (containerRefs.current[2] = ref)}>
         <Raw />
       </div>
-      <div ref={(ref) => (containerRefs.current[3] = ref)}>
+      <div ref={(ref) => (containerRefs.current[3] = ref)}></div>
         <Logistic />
-      </div>
+      
       <div ref={(ref) => (containerRefs.current[4] = ref)}> </div>
     </div >
   )
