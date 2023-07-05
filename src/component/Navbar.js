@@ -1,8 +1,8 @@
-import React, {useContext} from 'react'
-import { Link } from "react-router-dom";
+import React, { useContext } from 'react'
+import { Link, NavLink } from "react-router-dom";
 import MobileMenu from './MobileMenu';
 // import { ScrollContex } from '../App';
-import  {ScrollContext}  from '../context/ScrollContext';
+import { ScrollContext } from '../context/ScrollContext';
 
 
 export default function Navbar() {
@@ -12,19 +12,20 @@ export default function Navbar() {
 
     return (
         <div className='Navbar'>
-            <MobileMenu/>
+            <MobileMenu />
             <nav>
                 {/* <Link className="btn" to="/">Home </Link> */}
                 {/* <Link className="btn" to="products">Products </Link> */}
                 {/* <Link className="btn" to="products">Logistics</Link> */}
                 {/* <Link className="btn" to="contact">Contact</Link> */}
                 <button className="btn" onClick={() => scrollToContainer(0)} > Home </button>
-                <button className="btn" onClick={() => scrollToContainer(2)} > Products </button>
+                {/* <button className="btn" onClick={() => scrollToContainer(2)} > Products </button> */}
+                <NavLink className="btn" to="products">Products </NavLink>
                 <button className="btn" onClick={() => scrollToContainer(3)} > Logistics </button>
                 <button className="btn" onClick={() => scrollToContainer(4)} > Contact </button>
-                
+
             </nav>
-           
+
             <img src={'./img/logov2.png'} alt="logo" />
         </div>
     )
