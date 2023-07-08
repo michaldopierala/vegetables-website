@@ -14,16 +14,11 @@ export default function Navbar() {
         <div className='Navbar'>
             <MobileMenu />
             <nav>
-                {/* <Link className="btn" to="/">Home </Link> */}
-                {/* <Link className="btn" to="products">Products </Link> */}
-                {/* <Link className="btn" to="products">Logistics</Link> */}
-                {/* <Link className="btn" to="contact">Contact</Link> */}
-                <button className="btn" onClick={() => scrollToContainer(0)} > Home </button>
-                {/* <button className="btn" onClick={() => scrollToContainer(2)} > Products </button> */}
-                <NavLink className="btn" to="products">Products </NavLink>
-                <button className="btn" onClick={() => scrollToContainer(3)} > Logistics </button>
-                <button className="btn" onClick={() => scrollToContainer(4)} > Contact </button>
-
+                {/* <button className="btn" to="/" onClick={() => scrollToContainer(0)} > Home </button> */}
+                <Link className="btn" to="/" onClick={() => scrollToContainer(0)} > Home </Link>
+                <Link className="btn" style={{ fontWeight: "bold" }} to="product">Products </Link>
+                <Link className="btn" to="/" onClick={() => scrollToContainer(3)} > Logistics </Link>
+                <Link className="btn" to="/" onClick={() => scrollToContainer(4)} > Contact </Link>
             </nav>
 
             <img src={'./img/logov2.png'} alt="logo" />

@@ -9,7 +9,9 @@ import Home from './component/Home';
 import Footer from './component/Footer';
 import Contact from './pages/Contact';
 // import Learnmore from './pages/Learnmore';
-import ScrollContext  from './context/ScrollContext';
+import ScrollContext from './context/ScrollContext';
+import Main from './component/Main';
+import Product from './pages/Product';
 
 
 function App() {
@@ -20,13 +22,15 @@ function App() {
 
       <BrowserRouter>
         <ScrollContext>
-          <Navbar />
-          <Routes>
-            <Route index element={<Home />} />
-            {/* <Route path="/contact" element={<Contact />} /> */}
-            {/* <Route path="/learn" element={<Learnmore />} /> */}
-            {/* <Navbar /> */}
-            {/* <Slider /> */}
+          {/* <Navbar /> */}
+          <Routes >
+            <Route path="/" element={<Main />}>
+              <Route index element={<Home />} />
+              <Route path="/product" element={<Product />} />
+              {/* <Route path="/learn" element={<Learnmore />} /> */}
+              {/* <Navbar /> */}
+              {/* <Slider /> */}
+              </Route>
           </Routes>
           <Footer />
         </ScrollContext>

@@ -32,7 +32,7 @@ body {
   color: black;
   letter-spacing: 1.1px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bold !important;
   background: none;
   border: none;
 }
@@ -156,6 +156,23 @@ body {
   color: orange;
   margin-bottom: 15px;
   line-height: 1.2;
+}
+
+.Product {
+  margin: 100px 100px;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-auto-rows: minmax(200px, 450px);
+  padding-top: 85px;
+}
+.Product .image {
+  margin: 50px;
+}
+.Product .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .Logistic {
@@ -392,6 +409,7 @@ body {
     font-size: 23px;
     padding: 15px 65px;
     background: none;
+    font-weight: bold;
   }
   .Navbar img {
     left: 50%;
