@@ -16,6 +16,7 @@ export default function Home() {
   useEffect(() => {
     const container = containerRefs.current[scroll];
     container.scrollIntoView({ behavior: 'smooth' });
+    // console.log(container)
   }, [scroll]);
 
 

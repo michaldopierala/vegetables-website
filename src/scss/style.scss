@@ -195,7 +195,7 @@ body {
     margin-bottom: 200px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-auto-rows: minmax(200px, 450px);
+    // grid-auto-rows: minmax(200px, 450px);
     padding-top: 85px;
 
     .image {

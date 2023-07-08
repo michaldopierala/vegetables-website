@@ -128,6 +128,13 @@
         }
     }
 
+    .Product {
+        margin: 100px 10px;
+        padding-top: 85px;
+        grid-template-columns: 1fr;
+
+    }
+
     .Logistic {
         .head {
             font-size: 35px;

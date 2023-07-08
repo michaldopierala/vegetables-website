@@ -16,7 +16,7 @@ export default function Navbar() {
             <nav>
                 {/* <button className="btn" to="/" onClick={() => scrollToContainer(0)} > Home </button> */}
                 <Link className="btn" to="/" onClick={() => scrollToContainer(0)} > Home </Link>
-                <Link className="btn" style={{ fontWeight: "bold" }} to="product">Products </Link>
+                <Link className="btn" to="product" onClick={() => scrollToContainer(1)} style={{ fontWeight: "bold" }}   >Products </Link>
                 <Link className="btn" to="/" onClick={() => scrollToContainer(3)} > Logistics </Link>
                 <Link className="btn" to="/" onClick={() => scrollToContainer(4)} > Contact </Link>
             </nav>

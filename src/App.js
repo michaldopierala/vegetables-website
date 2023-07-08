@@ -19,7 +19,6 @@ function App() {
   return (
 
     <div className="App">
-
       <BrowserRouter>
         <ScrollContext>
           {/* <Navbar /> */}
@@ -29,13 +28,11 @@ function App() {
               <Route path="/product" element={<Product />} />
               {/* <Route path="/learn" element={<Learnmore />} /> */}
               {/* <Navbar /> */}
-              {/* <Slider /> */}
               </Route>
           </Routes>
           <Footer />
         </ScrollContext>
       </BrowserRouter>
-
     </div>
 
   );

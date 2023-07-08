@@ -163,7 +163,6 @@ body {
   margin-bottom: 200px;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-auto-rows: minmax(200px, 450px);
   padding-top: 85px;
 }
 .Product .image {
@@ -329,6 +328,11 @@ body {
   .Raws .raw .text_box .title {
     font-size: 32px;
     margin-bottom: 15px;
+  }
+  .Product {
+    margin: 100px 10px;
+    padding-top: 85px;
+    grid-template-columns: 1fr;
   }
   .Logistic .head {
     font-size: 35px;
