@@ -10,7 +10,6 @@ const Container = () => {
         setColor('blue');
       }
     };
-
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);

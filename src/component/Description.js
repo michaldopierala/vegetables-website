@@ -1,9 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
+// import { useTranslation, UseTranslationOptions } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
+
 
 
 export default function Description() {
+    // const [t, i18n] = useTranslation("global");
+    const { t } = useTranslation("global");
     const [containerVisible, setContainerVisible] = useState(false);
+    console.log(t("welcome"))
+
 
     const toggleContainerVisibility = () => {
         setContainerVisible(!containerVisible);
@@ -12,7 +19,7 @@ export default function Description() {
     return (
         <div className='Description'>
             <div className='head'>
-                Welcome to GreenBean
+            {t('welcome')}
             </div>
             <div className='text'>
                 We deliver wholesale vegetables and fruits. We supply our customers with fresh, high quality produce at

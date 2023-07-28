@@ -13,6 +13,7 @@ export default function Home() {
   const containerRefs = useRef([]);
 
 
+
   useEffect(() => {
     const container = containerRefs.current[scroll];
     container.scrollIntoView({ behavior: 'smooth' });
