@@ -1,0 +1,17 @@
+{
+
+  "menu":{
+    "products": "Products",
+    "logistics": "Logistics",
+    "contact": "Contact"
+  },
+  "slider":{
+    "text": "  We supply wholesale fruits and vegetables to your door"
+  },
+    "description": {
+      "head": "Welcome",
+      "description": "We deliver wholesale vegetables and fruits. We supply our customers with fresh, high quality produce at competitive prices. Partner with us and experience excellence in wholesale produce.",
+      "button": "Learn more",
+      "hide": "Hide info"
+    }
+  }

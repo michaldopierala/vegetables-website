@@ -1,0 +1,16 @@
+{
+  "menu":{
+    "products": "Produkty",
+    "logistics": "Logistyka",
+    "contact": "Kontakt"
+  },
+  "slider":{
+    "text": "Dostarczamy hurtowo owoce i warzywa pod Twoje drzwi"
+  },
+  "description": {
+    "head": "Witamy",
+    "description": "Dostarczamy hurtowo warzywa i owoce. Naszym klientom dostarczamy świeże, wysokiej jakości produkty w konkurencyjnych cenach. Współpracuj z nami i doświadcz doskonałości w produkcji hurtowej.",
+    "button": "Dowiedz się więcej",
+    "hide": "Schowaj"
+  }
+}

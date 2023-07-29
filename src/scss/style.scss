@@ -53,6 +53,13 @@ body {
         width: 140px;
     }
 
+    .translation{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(-50%, -50%);
+    }
+
     .menuIcon {
         display: none;
     }
