@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom";
-// import { useTranslation, UseTranslationOptions } from 'react-i18next'
-import { useTranslation } from 'react-i18next'
+import { useTranslation, Trans } from 'react-i18next';
 
 
 
 export default function Description() {
     // const [t, i18n] = useTranslation("global");
-    const { t } = useTranslation("global");
+    // const { t } = useTranslation("global");
+    const { t } = useTranslation();
+
     const [containerVisible, setContainerVisible] = useState(false);
-    console.log(t("welcome"))
 
 
     const toggleContainerVisibility = () => {
@@ -19,11 +18,10 @@ export default function Description() {
     return (
         <div className='Description'>
             <div className='head'>
-            {t('welcome')}
+            {t('description.head')}
             </div>
             <div className='text'>
-                We deliver wholesale vegetables and fruits. We supply our customers with fresh, high quality produce at
-                competitive prices. Partner with us and experience excellence in wholesale produce.
+            {t('description.description')}
             </div>
             <button className="btn" onClick={toggleContainerVisibility}>{containerVisible ? ' Hide info' : 'Learn more'}</button>
             {containerVisible && (
