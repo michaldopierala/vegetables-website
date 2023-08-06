@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import slider from './img/slider.jpg';
-// import slider2 from './img/slider2.jpg';
-// import "./styles.css";
+import { useTranslation } from 'react-i18next';
+
 
 const images = [
   "./img/slider1.jpg",
@@ -9,6 +8,7 @@ const images = [
 ];
 
 export default function Slider2() {
+  const { t, i18n } = useTranslation();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export default function Slider2() {
       <img src={images[currentImageIndex]} alt="slider" />
       <button id='next' onClick={nextSlide}>&#8250;</button>
       <div className="text">
-        <div>We supply wholesale fruits and vegetables to your door</div>
+        <div>{t('slider.text')}</div>
         {/* <div><mark>Vegetables</mark></div> 
         <div><mark>Fruit</mark></div> 
         <div><mark>Mushrooms</mark></div>  */}

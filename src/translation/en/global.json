@@ -1,11 +1,12 @@
 {
   "menu":{
-    "products": "Products",
-    "logistics": "Logistics",
-    "contact": "Contact"
+    "home":"HOME",
+    "products": "PRODUCTS ",
+    "logistics": "LOGISTICS",
+    "contact": "CONTACT"
   },
   "slider":{
-    "text": "  We supply wholesale fruits and vegetables to your door"
+    "text": " We supply wholesale fruits and vegetables to your door"
   },
     "description": {
       "head": "Welcome",

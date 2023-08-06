@@ -21,10 +21,10 @@ i18n
     resources: {
       en: {
         translation: en_translation
-    },
-    pl: {
+      },
+      pl: {
         translation: pl_translation
-    },
+      },
     }
   });
 

@@ -1,16 +1,16 @@
 {
   "menu":{
-    "products": "Products",
-    "logistics": "Logistics",
-    "contact": "Contact"
+    "products": "PRODUKTY",
+    "logistics": "LOGISTYKA",
+    "contact": "KONTAKT"
   },
   "slider":{
-    "text": "  We supply wholesale fruits and vegetables to your door"
+    "text": " Dostarczamy hurtowo owoce i warzywa pod Twoje drzwi"
   },
     "description": {
-      "head": "Welcome",
-      "description": "We deliver wholesale vegetables and fruits. We supply our customers with fresh, high quality produce at competitive prices. Partner with us and experience excellence in wholesale produce.",
-      "button": "Learn more",
-      "hide": "Hide info"
+      "head": "Witamy",
+      "description": "Dostarczamy hurtowo warzywa i owoce. Naszym klientom dostarczamy świeże, wysokiej jakości produkty w konkurencyjnych cenach. Współpracuj z nami i doświadcz doskonałości w produkcji hurtowej.",
+      "button": "dowiedz się więcej",
+      "hide": "Schowaj"
     }
   }

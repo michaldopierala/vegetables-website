@@ -47,6 +47,16 @@ body {
   transform: translate(-50%, -50%);
   width: 140px;
 }
+.Navbar .selector {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(-50%, -50%);
+}
+.Navbar .selector select {
+  text-decoration: none;
+  padding: 4px 7px;
+}
 .Navbar .menuIcon {
   display: none;
 }
