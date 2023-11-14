@@ -1,23 +1,10 @@
 @media only screen and (max-width: 1300px) {
+
     .Description {
         padding: 50px 200px;
         margin-bottom: 50px;
     }
 
-
-
-    .Slider {
-        
-        .text {
-            font-size: 40px;
-
-            div {
-                width: 50%;
-                left: 70px;
-                top: 40%;
-            }
-        }
-    }
 }
 
 
@@ -29,16 +16,6 @@
         }
     }
 
-    .Slider {
-        .text {
-            font-size: 35px;
-            line-height: 50px;
-
-            div {
-                width: 40%;
-            }
-        }
-    }
 
     .Description {
         padding: 50px 200px;
@@ -70,89 +47,17 @@
             width: 120px;
         }
     }
-}
 
-@media only screen and (max-width: 800px) {
-
-    .Slider {
-        padding-top: 70px;
-        img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-        }
-
-        .text {
-            font-size: 25px;
-            line-height: 35px;
-
-            div {
-                width: 40%;
-                left: 30px;
-                top: 40%;
-            }
-        }
-    }
-
-    .Description {
-        padding: 20px 30px;
-        margin-bottom: 20px;
-
-        .head {
-            line-height: 1.2;
-        }
-
-        .text {
-            font-size: 22px;
-            line-height: 1.5;
-        }
-
-        .showContainer {
-            padding: 20px;
-            font-size: 18px;
-        }
-    }
 
     .Raws {
         .raw {
-            .text_box {
-                padding: 30px;
-                font-size: 17px;
-                line-height: 1.3;
-
-                .title {
-                    font-size: 32px;
-                    margin-bottom: 15px;
-                }
-            }
-        }
-    }
-
-    .Product {
-        margin: 100px 10px;
-        padding-top: 85px;
-        grid-template-columns: 1fr;
-
-    }
-
-    .Logistic {
-        .head {
-            font-size: 35px;
-            margin-bottom: 40px;
-        }
-
-        .grid {
-            .text {
-                font-size: 18px;
-                padding: 40px 40px;
-
-            }
+            display: grid;
+            grid-template-columns: 1fr;
         }
     }
 }
 
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 800px) {
     .Navbar {
 
         nav {
@@ -246,6 +151,79 @@
             left: 50%;
         }
     }
+
+    .Slider {
+        img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .banerText {
+            top: 35%;
+            font-size: 1.6rem;
+            line-height: 35px;
+
+            div {
+                width: 40%;
+                left: 30px;
+                top: 40%;
+            }
+        }
+    }
+
+    .Home {
+        .Description {
+            padding: 20px 30px;
+            margin-bottom: 20px;
+
+            .head {
+                line-height: 1.2;
+            }
+
+            .text {
+                font-size: 22px;
+                line-height: 1.5;
+            }
+
+            .showContainer {
+                padding: 20px;
+                font-size: 18px;
+            }
+        }
+
+        .Raws {
+            .raw {
+                .text_box {
+                    padding: 30px;
+                    font-size: 17px;
+                    line-height: 1.3;
+
+                    .title {
+                        font-size: 32px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    .Product {
+        margin: 100px 10px;
+        padding-top: 85px;
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
 
 
 

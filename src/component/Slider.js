@@ -37,7 +37,7 @@ export default function Slider2() {
       <button id="prev" onClick={prevSlide}>&#8249;</button>
       <img src={images[currentImageIndex]} alt="slider" />
       <button id='next' onClick={nextSlide}>&#8250;</button>
-      <div className="text">
+      <div className="banerText">
         <h1>{t('slider.text')}</h1>
         {/* <div><mark>Vegetables</mark></div> 
         <div><mark>Fruit</mark></div> 

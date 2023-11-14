@@ -12,7 +12,7 @@ export default function Home() {
   const { scroll } = useContext(ScrollContext)
   const containerRefs = useRef([]);
 
-
+  console.log(scroll)
 
   useEffect(() => {
     const container = containerRefs.current[scroll];
@@ -22,7 +22,10 @@ export default function Home() {
 
 
   return (
-    <div>
+    <div className='Home'>
+      <div ref={(ref) => (containerRefs.current[1] = ref)}>
+        {/* ten pasek zastepuje current[1] - beze tego wystepowal error gdy cofałem z product page do Main page */}
+      </div>
       <div ref={(ref) => (containerRefs.current[0] = ref)}>
         <Slider />
       </div>
@@ -31,8 +34,7 @@ export default function Home() {
         <Raw />
       </div>
       <div ref={(ref) => (containerRefs.current[3] = ref)}></div>
-        <Logistic />
-      
+      <Logistic />
       <div ref={(ref) => (containerRefs.current[4] = ref)}> </div>
     </div >
   )

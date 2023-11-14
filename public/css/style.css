@@ -8,11 +8,11 @@ body {
 }
 
 .Navbar {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
-  height: 70px;
+  height: 65px;
   background-color: white;
   box-shadow: 0px 0px 10px -1px gray;
   z-index: 2;
@@ -67,12 +67,13 @@ body {
 }
 
 .Slider {
-  padding-top: 70px;
+  font-family: "Roboto", sans-serif;
+  padding-top: 65px;
   position: relative;
 }
 .Slider img {
   width: 100%;
-  height: 400px;
+  height: 100vh;
   object-fit: cover;
 }
 .Slider button {
@@ -85,26 +86,27 @@ body {
 .Slider button:hover {
   cursor: pointer;
 }
-.Slider .text {
-  font-family: "Viga", sans-serif;
-  font-size: 45px;
+.Slider .banerText {
+  position: absolute;
+  left: 7%;
+  top: 30%;
+  font-size: 75px;
   text-align: left;
-  line-height: 64px;
+  line-height: 88px;
   color: rgba(20, 20, 20, 0.9);
   font-weight: bold;
 }
-.Slider .text h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 100%; /* or 1em or 16px or whichever size you prefer */
+.Slider .banerText h1 {
+  font-size: 100%;
+  /* or 1em or 16px or whichever size you prefer */
+  letter-spacing: 0.1px;
   font-weight: normal;
-  color: inherit; /* Use if you want the h1 tag to inherit the color of its parent */
+  font-weight: bold;
+  color: inherit;
+  /* Use if you want the h1 tag to inherit the color of its parent */
   background: none;
   border: none;
   width: 50%;
-  position: absolute;
-  left: 125px;
-  top: 45%;
 }
 .Slider #prev {
   position: absolute;
@@ -117,19 +119,13 @@ body {
   right: 50px;
 }
 
-.Description {
-  padding: 65px 300px 50px 300px;
+.Home .Description {
+  padding: 65px 15% 50px 15%;
 }
-.Description .head {
-  font-size: 40px;
-  color: orange;
+.Home .Description .head {
   margin-bottom: 15px;
 }
-.Description .text {
-  font-size: 24px;
-  line-height: 1.4;
-}
-.Description .btn {
+.Home .Description .btn {
   margin-top: 30px;
   padding: 11px 22px;
   border-radius: 25px;
@@ -143,29 +139,28 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.Description .btn:hover {
+.Home .Description .btn:hover {
   cursor: pointer;
 }
-.Description .showContainer {
+.Home .Description .showContainer {
   background-color: rgba(255, 165, 0, 0.1);
   padding: 50px;
   font-size: 24px;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.8);
 }
-
-.Raws .raw {
+.Home .Raws .raw {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-auto-rows: minmax(200px, 450px);
   padding-top: 85px;
 }
-.Raws .raw .item img {
+.Home .Raws .raw .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.Raws .raw .text_box {
+.Home .Raws .raw .text_box {
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -173,11 +168,52 @@ body {
   font-size: 24px;
   line-height: 1.4;
 }
-.Raws .raw .text_box .title {
-  font-size: 40px;
-  color: orange;
+.Home .Raws .raw .text_box .title {
   margin-bottom: 15px;
   line-height: 1.2;
+}
+.Home .Logistic {
+  margin-top: 100px;
+  padding-top: 50px;
+  background-color: rgb(240, 240, 240);
+}
+.Home .Logistic .head {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.Home .Logistic .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 50px;
+}
+.Home .Logistic .grid .image {
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  width: 80%;
+}
+.Home .Logistic .grid .image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16%;
+  box-shadow: inset 0px 0px 15px 25px rgb(240, 240, 240);
+}
+.Home .Logistic .grid .image img {
+  width: 100%;
+  border-radius: 18%;
+}
+.Home .head, .Home .title {
+  color: orange;
+  font-size: 40px;
+  letter-spacing: 0.1px;
+}
+.Home .text {
+  font-size: 24px;
+  letter-spacing: 0.1px;
 }
 
 .Product {
@@ -195,49 +231,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.Logistic {
-  margin-top: 100px;
-  padding-top: 50px;
-  background-color: rgb(240, 240, 240);
-}
-.Logistic .head {
-  color: orange;
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 50px;
-}
-.Logistic .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-bottom: 50px;
-}
-.Logistic .grid .image {
-  position: relative;
-  margin: 0 auto;
-  display: inline-block;
-  width: 80%;
-}
-.Logistic .grid .image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 16%;
-  box-shadow: inset 0px 0px 15px 25px rgb(240, 240, 240);
-}
-.Logistic .grid .image img {
-  width: 100%;
-  border-radius: 18%;
-}
-.Logistic .grid .text {
-  font-size: 24px;
-  line-height: 1.4;
-  padding: 40px 90px;
-  color: rgb(40, 40, 40);
 }
 
 .Footer {
@@ -270,25 +263,10 @@ body {
     padding: 50px 200px;
     margin-bottom: 50px;
   }
-  .Slider .text {
-    font-size: 40px;
-  }
-  .Slider .text div {
-    width: 50%;
-    left: 70px;
-    top: 40%;
-  }
 }
 @media only screen and (max-width: 1100px) {
   .Navbar img {
     left: 70%;
-  }
-  .Slider .text {
-    font-size: 35px;
-    line-height: 50px;
-  }
-  .Slider .text div {
-    width: 40%;
   }
   .Description {
     padding: 50px 200px;
@@ -309,64 +287,12 @@ body {
   .Navbar img {
     width: 120px;
   }
-}
-@media only screen and (max-width: 800px) {
-  .Slider {
-    padding-top: 70px;
-  }
-  .Slider img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-  }
-  .Slider .text {
-    font-size: 25px;
-    line-height: 35px;
-  }
-  .Slider .text div {
-    width: 40%;
-    left: 30px;
-    top: 40%;
-  }
-  .Description {
-    padding: 20px 30px;
-    margin-bottom: 20px;
-  }
-  .Description .head {
-    line-height: 1.2;
-  }
-  .Description .text {
-    font-size: 22px;
-    line-height: 1.5;
-  }
-  .Description .showContainer {
-    padding: 20px;
-    font-size: 18px;
-  }
-  .Raws .raw .text_box {
-    padding: 30px;
-    font-size: 17px;
-    line-height: 1.3;
-  }
-  .Raws .raw .text_box .title {
-    font-size: 32px;
-    margin-bottom: 15px;
-  }
-  .Product {
-    margin: 100px 10px;
-    padding-top: 85px;
+  .Raws .raw {
+    display: grid;
     grid-template-columns: 1fr;
   }
-  .Logistic .head {
-    font-size: 35px;
-    margin-bottom: 40px;
-  }
-  .Logistic .grid .text {
-    font-size: 18px;
-    padding: 40px 40px;
-  }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .Navbar nav {
     display: none;
   }
@@ -441,6 +367,52 @@ body {
   .Navbar img {
     left: 50%;
   }
+  .Slider img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+  .Slider .banerText {
+    top: 35%;
+    font-size: 1.6rem;
+    line-height: 35px;
+  }
+  .Slider .banerText div {
+    width: 40%;
+    left: 30px;
+    top: 40%;
+  }
+  .Home .Description {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+  }
+  .Home .Description .head {
+    line-height: 1.2;
+  }
+  .Home .Description .text {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .Home .Description .showContainer {
+    padding: 20px;
+    font-size: 18px;
+  }
+  .Home .Raws .raw .text_box {
+    padding: 30px;
+    font-size: 17px;
+    line-height: 1.3;
+  }
+  .Home .Raws .raw .text_box .title {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .Product {
+    margin: 100px 10px;
+    padding-top: 85px;
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
   .Raws .raw {
     grid-template-columns: 100%;
   }
