@@ -22,9 +22,12 @@ i18n
       en: {
         translation: en_translation
       },
-      pl: {
-        translation: pl_translation
-      },
+      // pl: {
+      //   translation: pl_translation
+      // },
+      // de: {
+      //   translation: pl_translation
+      // },
     }
   });
 

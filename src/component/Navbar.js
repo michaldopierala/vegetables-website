@@ -17,6 +17,7 @@ export default function Navbar() {
         de: { nativeName: 'Deutsch' },
         pl: { nativeName: 'Polish' }
     };
+    
     const handleLanguageChange = (event) => {
         setLanguage(event.target.value);
         i18n.changeLanguage(event.target.value);
@@ -32,7 +33,7 @@ export default function Navbar() {
                 <Link className="btn" to="/" onClick={() => scrollToContainer(3)} > {t('menu.logistics')} </Link>
                 <Link className="btn" to="/" onClick={() => scrollToContainer(4)} > {t('menu.contact')} </Link>
             </nav>
-            <img src={'./img/logov2.png'} alt="logo" />
+            <img src={'./img/logov22.png'} alt="logo" />
             <div className='selector'>
                 <select value={language} onChange={handleLanguageChange}>
                     <option value="en">English</option>

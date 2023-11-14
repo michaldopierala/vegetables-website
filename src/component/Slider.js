@@ -38,7 +38,7 @@ export default function Slider2() {
       <img src={images[currentImageIndex]} alt="slider" />
       <button id='next' onClick={nextSlide}>&#8250;</button>
       <div className="text">
-        <div>{t('slider.text')}</div>
+        <h1>{t('slider.text')}</h1>
         {/* <div><mark>Vegetables</mark></div> 
         <div><mark>Fruit</mark></div> 
         <div><mark>Mushrooms</mark></div>  */}

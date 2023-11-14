@@ -8,11 +8,11 @@ body {
 }
 
 .Navbar {
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
-  height: 90px;
+  height: 70px;
   background-color: white;
   box-shadow: 0px 0px 10px -1px gray;
   z-index: 2;
@@ -27,10 +27,10 @@ body {
 .Navbar nav .btn {
   text-decoration: none;
   margin: 5px;
-  padding: 5px;
-  font-size: 17px;
+  padding: 3px;
+  font-size: 14px;
   color: black;
-  letter-spacing: 1.1px;
+  letter-spacing: 0.3px;
   text-transform: uppercase;
   font-weight: bold !important;
   background: none;
@@ -40,29 +40,34 @@ body {
   cursor: pointer;
   text-decoration: underline;
 }
+.Navbar .menuIcon {
+  display: none;
+}
 .Navbar img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 140px;
+  width: 160px;
 }
 .Navbar .selector {
+  border: none;
+  border: solid 1px gray;
   position: absolute;
   top: 50%;
   right: 20px;
   transform: translate(-50%, -50%);
+  display: none;
 }
 .Navbar .selector select {
-  text-decoration: none;
+  border: none;
   padding: 4px 7px;
-}
-.Navbar .menuIcon {
-  display: none;
+  background-color: white;
+  outline: none;
 }
 
 .Slider {
-  padding-top: 85px;
+  padding-top: 70px;
   position: relative;
 }
 .Slider img {
@@ -85,14 +90,21 @@ body {
   font-size: 45px;
   text-align: left;
   line-height: 64px;
-  color: rgba(20, 20, 20, 0.85);
+  color: rgba(20, 20, 20, 0.9);
   font-weight: bold;
 }
-.Slider .text div {
+.Slider .text h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 100%; /* or 1em or 16px or whichever size you prefer */
+  font-weight: normal;
+  color: inherit; /* Use if you want the h1 tag to inherit the color of its parent */
+  background: none;
+  border: none;
   width: 50%;
   position: absolute;
-  left: 175px;
-  top: 40%;
+  left: 125px;
+  top: 45%;
 }
 .Slider #prev {
   position: absolute;

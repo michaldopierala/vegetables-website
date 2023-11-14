@@ -8,7 +8,7 @@ body {
 }
 
 .Navbar {
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -47,6 +47,21 @@ body {
   transform: translate(-50%, -50%);
   width: 140px;
 }
+.Navbar .selector {
+  border: none;
+  border: solid 1px gray;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.Navbar .selector select {
+  border: none;
+  padding: 4px 7px;
+  background-color: white;
+  outline: none;
+}
 .Navbar .menuIcon {
   display: none;
 }
@@ -78,7 +93,14 @@ body {
   color: rgba(20, 20, 20, 0.85);
   font-weight: bold;
 }
-.Slider .text div {
+.Slider .text h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 100%; /* or 1em or 16px or whichever size you prefer */
+  font-weight: normal;
+  color: inherit; /* Use if you want the h1 tag to inherit the color of its parent */
+  background: none;
+  border: none;
   width: 50%;
   position: absolute;
   left: 175px;
