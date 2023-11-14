@@ -68,6 +68,7 @@ body {
 
 .Slider {
   font-family: "Roboto", sans-serif;
+  font-family: "Lilita One", sans-serif;
   padding-top: 65px;
   position: relative;
 }
@@ -89,17 +90,17 @@ body {
 .Slider .banerText {
   position: absolute;
   left: 7%;
-  top: 30%;
-  font-size: 75px;
+  top: 33%;
+  font-size: 65px;
   text-align: left;
-  line-height: 88px;
+  line-height: 5rem;
   color: rgba(20, 20, 20, 0.9);
   font-weight: bold;
 }
 .Slider .banerText h1 {
   font-size: 100%;
   /* or 1em or 16px or whichever size you prefer */
-  letter-spacing: 0.1px;
+  letter-spacing: 0.3px;
   font-weight: normal;
   font-weight: bold;
   color: inherit;
@@ -119,13 +120,13 @@ body {
   right: 50px;
 }
 
-.Home .Description {
+.Description {
   padding: 65px 15% 50px 15%;
 }
-.Home .Description .head {
+.Description .head {
   margin-bottom: 15px;
 }
-.Home .Description .btn {
+.Description .btn {
   margin-top: 30px;
   padding: 11px 22px;
   border-radius: 25px;
@@ -139,28 +140,29 @@ body {
   font-weight: bold;
   margin-bottom: 20px;
 }
-.Home .Description .btn:hover {
+.Description .btn:hover {
   cursor: pointer;
 }
-.Home .Description .showContainer {
+.Description .showContainer {
   background-color: rgba(255, 165, 0, 0.1);
   padding: 50px;
   font-size: 24px;
   line-height: 1.4;
   color: rgba(0, 0, 0, 0.8);
 }
-.Home .Raws .raw {
+
+.Raws .raw {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-auto-rows: minmax(200px, 450px);
   padding-top: 85px;
 }
-.Home .Raws .raw .item img {
+.Raws .raw .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.Home .Raws .raw .text_box {
+.Raws .raw .text_box {
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -168,31 +170,34 @@ body {
   font-size: 24px;
   line-height: 1.4;
 }
-.Home .Raws .raw .text_box .title {
+.Raws .raw .text_box .title {
   margin-bottom: 15px;
-  line-height: 1.2;
 }
-.Home .Logistic {
+
+.Logistic {
   margin-top: 100px;
   padding-top: 50px;
   background-color: rgb(240, 240, 240);
 }
-.Home .Logistic .head {
+.Logistic .head {
   font-weight: bold;
   margin-bottom: 50px;
 }
-.Home .Logistic .grid {
+.Logistic .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 50px;
 }
-.Home .Logistic .grid .image {
+.Logistic .grid .text {
+  padding: 60px;
+}
+.Logistic .grid .image {
   position: relative;
   margin: 0 auto;
   display: inline-block;
   width: 80%;
 }
-.Home .Logistic .grid .image::before {
+.Logistic .grid .image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -202,18 +207,23 @@ body {
   border-radius: 16%;
   box-shadow: inset 0px 0px 15px 25px rgb(240, 240, 240);
 }
-.Home .Logistic .grid .image img {
+.Logistic .grid .image img {
   width: 100%;
   border-radius: 18%;
 }
-.Home .head, .Home .title {
+
+.Home .head,
+.Home .title {
   color: orange;
   font-size: 40px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0px;
+  line-height: 35px;
 }
 .Home .text {
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 0.1px;
+  line-height: 28px;
+  word-spacing: 1px;
 }
 
 .Product {
@@ -249,6 +259,7 @@ body {
 }
 .Footer .adress .contact {
   text-transform: uppercase;
+  font-weight: bold;
   margin-bottom: 25px;
   font-size: 24px;
 }
@@ -262,6 +273,10 @@ body {
   .Description {
     padding: 50px 200px;
     margin-bottom: 50px;
+  }
+  .Slider .banerText {
+    font-size: 5vw;
+    line-height: 7vw;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -277,7 +292,7 @@ body {
   }
   .Logistic .grid .text {
     font-size: 22px;
-    padding: 40px 100px;
+    padding: 40px 60px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -286,10 +301,6 @@ body {
   }
   .Navbar img {
     width: 120px;
-  }
-  .Raws .raw {
-    display: grid;
-    grid-template-columns: 1fr;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -374,7 +385,7 @@ body {
   }
   .Slider .banerText {
     top: 35%;
-    font-size: 1.6rem;
+    font-size: 24px;
     line-height: 35px;
   }
   .Slider .banerText div {
@@ -391,28 +402,16 @@ body {
   }
   .Home .Description .text {
     font-size: 22px;
-    line-height: 1.5;
   }
   .Home .Description .showContainer {
     padding: 20px;
     font-size: 18px;
-  }
-  .Home .Raws .raw .text_box {
-    padding: 30px;
-    font-size: 17px;
-    line-height: 1.3;
-  }
-  .Home .Raws .raw .text_box .title {
-    font-size: 32px;
-    margin-bottom: 15px;
   }
   .Product {
     margin: 100px 10px;
     padding-top: 85px;
     grid-template-columns: 1fr;
   }
-}
-@media only screen and (max-width: 600px) {
   .Raws .raw {
     grid-template-columns: 100%;
   }
